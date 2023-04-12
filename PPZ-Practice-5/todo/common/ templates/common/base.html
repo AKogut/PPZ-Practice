@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To Do List</title>
+  </head>
+  <body>
+    <nav>
+      <a href="{% url 'task_list' %}">Task List</a> |
+      <a href="{% url 'task_from' %}">Create Task</a>
+    </nav>
+    <hr>
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>
